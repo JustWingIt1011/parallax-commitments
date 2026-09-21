@@ -1,0 +1,9 @@
+# Byte-exactness is the whole point of this repository: every predictions/*.json
+# file is verified by SHA-256 against its own filename. Any end-of-line
+# normalisation would change those bytes on checkout and break verification for
+# everyone but the machine that wrote them. So normalisation is off everywhere,
+# explicitly, rather than left to auto-detection.
+* -text
+
+*.json binary
+*.ots  binary
